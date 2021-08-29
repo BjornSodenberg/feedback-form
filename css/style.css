@@ -1,1 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+.commentsList {
+  display: flex;
+  flex-direction: column;
+}
+
+.createNewComment {
+  margin: 10px
+}
+
+.usernameInput, .commentInput {
+  width: 100%;
+  outline: none;
+}
+
+.commentInput {
+  height: 80px;
+  resize: none;
+  margin-bottom: 10px;
+}
+
+.addComment {
+  padding: 15px 20px;
+  color: #FFF9FB;
+  float: right;
+}
+
+.addComment:hover {
+  background-color: #BB0A21;
+}
+
+.comments, .pagination {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.commentLable {
+  font: 400 1em/1em sans-serif;
+}
+
+.usernameLable {
+  font: 700 1em/1em sans-serif;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.commentsItem {
+  /*background-color: #FFF9FB;*/
+  border: 1px solid black;
+  padding: 12px 24px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.commentDate {
+  font: 400 13px/13px sans-serif;
+  margin-left: 10px;
+  color: gray;
+}
+
+.pageLi {
+  margin-bottom: 20px;
+}
+
+.pageLi:not(:last-child) {
+  margin-right: 5px;
+}
+
+.page {
+  padding: 15px 20px;
+}
+
+.btn {
+  background-color: black;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  color: #FFF9FB
+}
+
+.btnActive {
+  background-color: #BB0A21;
+}
+
+
+.page:hover {
+  background-color: #BB0A21;
+}
 
