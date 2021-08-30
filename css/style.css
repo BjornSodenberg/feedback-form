@@ -11,6 +11,10 @@
   margin: 10px
 }
 
+.total {
+  margin: 10px
+}
+
 .usernameInput, .commentInput {
   width: 100%;
   outline: none;

@@ -7,12 +7,12 @@
 </head>
 <body>
   <div class="commentsList">
-    <div class="createNewComment">
-      <p class="total"></p>
-      <input class="usernameInput" placeholder="Введите ваше имя" type="text"/>
-      <textarea class="commentInput" placeholder="Оставьте комментарий"></textarea>
-      <button class="addComment btn">Add Comment</button>
-    </div>
+    <p class="total"></p>
+    <form name="form" class="createNewComment">
+      <input name="username" class="usernameInput" placeholder="Введите ваше имя" type="text"/>
+      <textarea name="comment" class="commentInput" placeholder="Оставьте комментарий"></textarea>
+      <button name="submit" class="addComment btn">Отправить отзыв</button>
+    </form>
 
     <ul class="comments"></ul>
     <ul class="pagination"></ul>

@@ -9,16 +9,14 @@
 const COMMENTS_ON_PAGE = 5;
 
 const formElements = {
-  submit : document.querySelector('.addComment'),
-  comment: document.querySelector('.commentInput'),
-  user: document.querySelector('.usernameInput'),
   commentsList: document.querySelector('.comments'),
   pagination: document.querySelector('.pagination'),
   totalComments: document.querySelector('.total'),
 }
-
+/*init form*/
+const form = document.forms[0];
 /**/
-formElements.submit.addEventListener('click', addCommentListener);
+form.elements.submit.addEventListener('click', addCommentListener);
 
 /* список комментариев */
 let commentList = [];
@@ -69,10 +67,9 @@ function changeButtonStyle (btn) {
 
 function addCommentListener() {
   const date = '' + getCurrentDate();
-  console.log(date)
   const newComment = {
-    username: formElements.user.value,
-    comment: formElements.comment.value,
+    username: form.elements.username.value,
+    comment: form.elements.comment.value,
     date: date
   }
 
